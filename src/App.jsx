@@ -27,8 +27,7 @@ function App() {
                 <NavLink
                   to="/" exact
                   className="nav-link"
-                  activeclassname="active" // Add active class for styling
-                >
+                  activeclassname="active">
                   About Me
                 </NavLink>
               </li>
@@ -51,7 +50,7 @@ function App() {
               
             </ul>
           </nav>
-          {/* Main Content */}
+          
           <main className="col-md-9 col-lg-10">
             
             <Routes>
