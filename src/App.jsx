@@ -55,7 +55,7 @@ function App() {
           <main className="col-md-9 col-lg-10">
             
             <Routes>
-              <Route path="/" element={<Home />} />
+              <Route path="/portfolio_application" element={<Home />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/project" element={<Project />} />
               <Route path="/skills" element={<Skills />} />
