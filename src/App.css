@@ -1,0 +1,72 @@
+/* Custom styles for links */
+.sidebar{
+  background-color:aliceblue;
+   
+  }
+  .nav-link {
+    color: #333;
+    font-weight: bolder;
+  }
+  
+  .nav-link:hover {
+    color: white;
+    text-decoration: none;
+    background-color:  #333;
+  }
+  .nav-link.active{
+    color : white;
+    background: #333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  .profilePhoto{
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 50%;
+  }
+  .personName{
+    height:auto;
+    text-align: center;
+    background-color:  #333;
+  }
+  .backcc{
+    /* background: linear-gradient(135deg, #000000, #434343); */
+    background: linear-gradient(236deg, rgb(39, 43, 44) 48.20%, rgb(241, 60, 43) 100.00%);
+    min-height:100vh;
+  }
+  /* Hide sidebar by default on small screens */
+  
+  /* Show sidebar when visible class is added */
+  .sidebar.visible {
+    display: block;
+    transform: translateX(0);
+  }
+  
+  
+  @media (min-width: 768px) {
+    .sidebar {
+      display: block;
+      position: relative;
+      transform: none;
+      min-height:100vh; 
+    }
+  
+    
+  }
+  @media (max-width: 767px) {
+    .profilePhoto{
+      height: 100px;
+      border-radius: 50%;
+      width: 100px;
+      vertical-align: center;
+    }
+    .sidebar{
+      text-align: center;
+      
+    }
+  }
+  
+  
