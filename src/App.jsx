@@ -55,7 +55,7 @@ function App() {
           <main className="col-md-9 col-lg-10">
             
             <Routes>
-              <Route path="/portfolio_application" element={<Home />} />
+              <Route path="https://nimmalarakeshreddy.github.io/portfolio_application/home" element={<Home />} />
               <Route path="/experience" element={<Experience />} />
               <Route path="/project" element={<Project />} />
               <Route path="/skills" element={<Skills />} />
