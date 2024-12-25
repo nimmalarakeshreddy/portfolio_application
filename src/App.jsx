@@ -25,7 +25,7 @@ function App() {
             <ul className="nav flex-column">
               <li className="nav-item">
                 <NavLink
-                  to="/"
+                  to="/" exact
                   className="nav-link"
                   activeclassname="active" // Add active class for styling
                 >
