@@ -1,7 +1,18 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 
+function VisitorCount() {
+  const [count, setCount] = useState(0);
 
+  useEffect(() => {
+    const namespace = 'your_namespace';
+    const key = 'visitor_count';
+
+    fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+      .then(response => response.json())
+      .then(data => setCount(data.value))
+      .catch(error => console.error('Error fetching visitor count:', error));
+  }, []);
 function Footer() {
   return (
     <footer className="footer mt-0 ">
@@ -37,7 +48,8 @@ function Footer() {
             >
               <i className="fab fa-github"></i>
             </a>
-          </li>
+          </li> |
+          <li>Total Visitors: {count}</li>
         </ul>
       </div>
     </footer>
