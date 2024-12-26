@@ -1,7 +1,7 @@
 import React from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 
-function VisitorCount() {
+function Footer() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function VisitorCount() {
       .then(data => setCount(data.value))
       .catch(error => console.error('Error fetching visitor count:', error));
   }, []);
-function Footer() {
+
   return (
     <footer className="footer mt-0 ">
       <div className="footer-content">
